@@ -1,0 +1,134 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header Section */
+header {
+    background-color: #282c34;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+/* Search Section */
+#search-section {
+    margin: 20px;
+}
+
+#search-input {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#search-button,
+#home-button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+#search-button:hover,
+#home-button:hover {
+    background-color: #0056b3;
+}
+
+/* Results Section */
+#results-container,
+#favorites-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+    width: 80%;
+}
+
+.video-item {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 15px;
+    width: 200px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.video-item:hover {
+    transform: scale(1.05);
+}
+
+.video-item h3 {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.video-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.play-button,
+.favorite-button {
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.play-button {
+    background-color: #28a745;
+    color: white;
+}
+
+.favorite-button {
+    background-color: #ffc107;
+    color: black;
+}
+
+.play-button:hover {
+    background-color: #218838;
+}
+
+.favorite-button:hover {
+    background-color: #e0a800;
+}
+
+/* Favorites Section */
+#favorites-container {
+    border-top: 2px solid #007bff;
+    padding-top: 10px;
+}
+
+#favorites-container h2 {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Player Section */
+#player-container {
+    margin: 20px;
+    text-align: center;
+}
+
+/* Loading Message */
+#results-container p {
+    font-size: 18px;
+    color: #555;
+}
