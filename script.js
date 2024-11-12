@@ -7,7 +7,7 @@ console.log(API_KEY); // Check if it's loaded properly
 async function fetchMusic(query) {
     try {
         // Make an API request to your Express backend
-        const response = await fetch(`https://your-deployed-server.com/api/music?q=${encodeURIComponent(query)}`);
+        const response = await fetch(`https://ai-music-player.onrender.com/api/music?q=${encodeURIComponent(query)}`);
         const data = await response.json();
         return data || []; // Return items or an empty array
     } catch (error) {
